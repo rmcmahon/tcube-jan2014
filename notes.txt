@@ -64,3 +64,8 @@ GIT2.0 is changing mainly the default configs and messages
 //git checkout command changes branch (hg update)
 
 bash completion is a tool that puts branch in the command line
+
+//--noff  skips fast forward merge
+git merge
+
+//commit message during a conflict is saved to git folder, after resolving merge conflict, run "git commit" as it needs to finish the //current merge conflict, i.e. you cannot run 'git commit -m "message"'
