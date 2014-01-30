@@ -1,0 +1,60 @@
+Github training
+
+//force clfr line endings
+git config --global core.autocrlf input
+
+//initialise the current folder as a GIT repo (can also be passed 
+git init
+//adds everything from this point to add to your initialised git folder
+//add stages the change for next commit (not just adding a new file)
+//-p is for patch , shows local changes
+//-A ignores the fact the file is not present (2.0 doesn't need this)
+git add . 
+
+//commit with a message
+git commit -m "message"
+
+//get status of folder
+git status
+
+has three sections
+
+section1 is changes ready for commit
+section 2 is changes to existing files, that are not staged
+section 3 is untracked files, new files not part of source control
+
+//get log of actions
+//gives you a full log of commit history
+//q is for quit, page dn and up also work
+git log
+//gives you first 7 characters of commit hash and message ofr overview of recent changes
+git log --oneline
+//gives a more detailed list of changes for the current repo
+git log --stat
+//shows what went in, in patch format
+git log --patch
+
+//show every difference in changes to existing tracked files and staged files(section 1 & 2 above)
+git diff
+
+//shows changes to stages files (i.e not including changes to files in section 2 above)
+git diff --staged
+
+//can loose work in git, has 3 modes 
+
+//--soft, changes index files for staging area, defaults to head when revision number not set
+//--hard, loses without trace changes to a file in staged area and unstaged tracked file area, reverting local changes
+//can also be used to revert commits
+git reset
+
+//amend changes message on previously commit, cant add or change files
+git commit --amend
+
+
+//rename a file
+git mv
+
+//git ignore goes into the root, but can have one in every folder defining whats to be ignored there
+.gitignore
+
+GIT2.0 is changing mainly the default configs and messages
