@@ -69,3 +69,11 @@ bash completion is a tool that puts branch in the command line
 git merge
 
 //commit message during a conflict is saved to git folder, after resolving merge conflict, run "git commit" as it needs to finish the //current merge conflict, i.e. you cannot run 'git commit -m "message"'
+
+
+//-u is only needed the first time
+git push -u 
+
+
+//downloads the changes but stores in .git directory so you cant see anything locally, but all files and meta data have been downloaded
+git fetch
