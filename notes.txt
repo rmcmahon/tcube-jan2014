@@ -33,10 +33,11 @@ git log --oneline
 git log --stat
 //shows what went in, in patch format
 git log --patch
+//shows branches in "asci art"
+git log --online --all --graph --decorate
 
 //show every difference in changes to existing tracked files and staged files(section 1 & 2 above)
 git diff
-
 //shows changes to stages files (i.e not including changes to files in section 2 above)
 git diff --staged
 
@@ -58,3 +59,8 @@ git mv
 .gitignore
 
 GIT2.0 is changing mainly the default configs and messages
+
+
+//git checkout command changes branch (hg update)
+
+bash completion is a tool that puts branch in the command line
